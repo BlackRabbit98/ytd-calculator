@@ -2,11 +2,10 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Button, FormControl, FormLabel, Input } from '@mui/material';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import useSWR from 'swr';
 import axios from 'axios';
 import * as yup from 'yup';
-import Error from 'next/error';
 
 type Result = { daysCovered: number; annualPay: number };
 
